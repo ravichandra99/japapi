@@ -400,7 +400,7 @@ class GetCourse(APIView):
         return Response(serializer.data)
 
 
-@api_view(['POST'])
+@api_view(['POST','GET'])
 @authentication_classes(())
 @permission_classes(())
 def login(request):
